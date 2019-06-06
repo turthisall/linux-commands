@@ -1,0 +1,7 @@
+IFS=$'\n';
+for LINE in $(cat data_file); do
+    VARA=$(echo ${LINE} | awk '{ print $1}')
+    VARB=$(echo ${LINE} | awk '{ print $2 }')
+    echo "VARA is ${VARA}"
+    echo "VARB is ${VARB}"
+done
